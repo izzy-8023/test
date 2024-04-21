@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽奖程序</title>
+    <script>
+        function lotteryDraw() {
+            const randNum = Math.random(); // 生成0到1之间的随机数
+
+            if (randNum < 0.10) {
+                alert("恭喜你抽中了 SSR!");
+            } else if (randNum < 0.30) {
+                alert("恭喜你抽中了 SR!");
+            } else if (randNum < 0.70) {
+                alert("恭喜你抽中了 R!");
+            } else if (randNum < 0.90) {
+                alert("恭喜你抽中了 A!");
+            } else {
+                alert("恭喜你抽中了 B!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="lotteryDraw()">点击这里抽奖</button>
+</body>
+</html>
